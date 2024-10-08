@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="visualization/style.css">
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/d3-geo@"></script>
     <script src="https://cdn.jsdelivr.net/npm/d3-geo-projection@4"></script>
@@ -24,23 +24,23 @@
         <div class="album-container">
             <div id="upAllNight-Album">
                 <h5>Up All Night</h5>
-                <img src="../albums/Up All Night.jpg" alt="Up All Night" id="upAllNight" class="album">
+                <img src="albums/Up All Night.jpg" alt="Up All Night" id="upAllNight" class="album">
             </div>
             <div id="takeMeHome-Album">
                 <h5>Take Me Home</h5>
-                <img src="../albums/Take Me Home.png" alt="Take Me Home" id="takeMeHome" class="album">
+                <img src="albums/Take Me Home.png" alt="Take Me Home" id="takeMeHome" class="album">
             </div>
             <div id="midnightMemories-Album">
                 <h5>Midnight Memories</h5>
-                <img src="../albums/Midnight Memories.png" alt="Midnight Memories" id="midnightMemories" class="album">
+                <img src="albums/Midnight Memories.png" alt="Midnight Memories" id="midnightMemories" class="album">
             </div>
             <div id="FOUR-Album">
                 <h5>FOUR</h5>
-                <img src="../albums/FOUR.png" alt="Four" id="four" class="album">
+                <img src="albums/FOUR.png" alt="Four" id="four" class="album">
             </div>
             <div id="madeInTheAM-Album">
                 <h5>Made in the A.M.</h5>
-                <img src="../albums/Made In The A.M.jpg" alt="Made in the A.M." id="madeInTheAM" class="album">
+                <img src="albums/Made In The A.M.jpg" alt="Made in the A.M." id="madeInTheAM" class="album">
             </div>
         </div>
         <button id="reset">Resetear Filtro</button>
@@ -56,8 +56,8 @@
         <button onclick="toggleMinimize()" id="minimize-button" style="top: 152px;">Minimizar 🎵</button>
         <iframe style="border-radius:12px; position: fixed; display: block; right: 0px;" id="spotify-iframe" src="https://open.spotify.com/embed/artist/4AK6F7OLvEQ5QYCBNiQWHq?utm_source=generator&theme=0" width="30%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
-    <script src="vis2.js"></script>
-    <script src="vis1.js"></script>
+    <script src="visualization/vis2.js"></script>
+    <script src="visualization/vis1.js"></script>
     <script>
         function toggleMinimize() {
             var iframe = document.getElementById('spotify-iframe');
